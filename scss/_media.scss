@@ -1,0 +1,129 @@
+.media {
+    .inner {
+        h1 { margin-bottom: 80px;}
+
+        .vidGallery{
+            &::after {content: ''; display: block; clear: both;}
+        
+            article:not(:first-child) {
+        
+                width: 32%; float: left; margin-right: 2%; margin-bottom: 40px;
+                position: relative; overflow: hidden;
+                
+                a {
+                    display: block; width: 100%; height: 240px; overflow: hidden;
+                    background: #000;
+        
+                    img {
+                        width: 100%; height: 100%; object-fit: cover; transform: scale(1.6);
+                        transition: 0.5s;
+                    }
+                }
+
+                .con {
+                    width: 100%; height: 144px;
+                    padding: 20px;
+                    position: absolute; top: 100%; left: 0;
+                    background: rgba(0, 0, 0, 0.8); transition: 0.5s;
+        
+                    .title {
+                        font: 700 15px/1 'Lato','Noto Sans KR'; color: #fff;
+                        margin-bottom: 15px;
+                        // cursor: pointer;
+                    }
+                    p {
+                        font: 400 12px/1.2 'Lato','Noto Sans KR'; color: #ccc;
+                    }
+                    span {
+                        font: 400 11px/1.2 'Lato'; color: #9ee082;
+                        position: absolute;
+                        bottom: 15px; left: 20px;
+                    }
+                }
+                &:hover {
+                    a img { filter: grayscale(1);}
+                    .con { top: 40%;}
+                }
+        
+                &:last-of-type { margin-right: 0%;}
+            }
+
+            article:first-child {
+                width: 100%;
+                float: left; margin-bottom: 80px;
+                display: flex;
+                justify-content: space-between;
+
+                a {
+                    width: 50%; height: 360px;
+                    overflow: hidden;
+
+                    img {
+                        width: 100%; height: 100%;
+                        object-fit: cover; transform: scale(1.6);
+                    }
+                }
+                .con {
+                    width: 45%; height: 360px;
+                    position: relative;
+
+                    .title {
+                        font: 700 32px/1.4 'Lato','Noto Sans KR'; color: #fff;
+                        margin-bottom: 30px;
+                    }
+                    p {
+                        font: 400 17px/1.6 'Lato','Noto Sans KR'; color: #ddd;
+                    }
+                    span {
+                        font: 400 16px/1.7 'Lato'; color: #9ee082;
+                        position: absolute;
+                        left: 0; bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    aside {
+        width: 100%; height: 100vh;
+        position: fixed;
+        top: 0; left: 0;
+        background: rgba(0, 0, 0, 0.7);
+        padding: 8vw 12vw;
+        z-index: 9;
+    
+        iframe {
+            width: 100%; height: 100%;
+        }
+        .btnClose {
+            display: block;
+            width: 80px; height: 80px;
+            position: absolute;
+            top: 30px; right: 30px;
+            font-size: 0;
+            text-indent: -999px;
+            cursor: pointer;
+    
+            &::before {
+                content: ''; display: block;
+                width: 100%; height: 2px;
+                background: #fff;
+                position: absolute;
+                top: 0; left: 0;
+                transform-origin: top left;
+                transform: rotate(45deg);
+                margin-left: 25px;
+            }
+            &::after {
+                content: ''; display: block;
+                width: 100%; height: 2px;
+                background: #fff;
+                position: absolute;
+                top: 0; right: 0;
+                transform-origin: top right;
+                transform: rotate(-45deg);
+                margin-left: -25px;
+            }
+        }
+    }
+}

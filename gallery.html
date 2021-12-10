@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> es6 portfolio</title>
+    <script src="https://kit.fontawesome.com/38274d1a6b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script defer src="js/anime.js"></script>
+    <script defer src="js/common.js"></script>
+    <script defer src="js/myFlickr.js"></script>
+</head>
+<body> 
+    <header>
+        <h1 class="logo"><a href="index.html">D-RECORD</a></h1>
+        <div class="inner">
+            <ul>
+                <li><a href="about.html">About</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="media.html">Media</a></li>
+            </ul>
+        </div>
+        <a href="signup.html" class="sign">Sign Up</a>
+        <div id="btnMenu"><span>menu</span></div>
+
+        <div class="gnb">
+            <ul id="navi">
+                <li><a href="about.html">About</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="media.html">Media</a></li>
+            </ul>
+        </div>
+    </header>
+    <main class="content gallery">
+        <div class="inner">
+            <h1>Gallery</h1>
+            <section class="searchBox">
+                <input type="text" class="searchBar" placeholder="검색어를 입력해주세요.">
+                <button class="btnSearch">검색</button>
+            </section>
+            <section id="wrap">
+                <img src="img/loading.gif" class="loading">
+
+                <ul class="list">
+                    <!-- <li class="item">
+                        <div class="panel">
+                            <div class="txt">
+                                <p>title</p>
+                                <span>id</span>
+                            </div>
+                            <a href="큰페이지주소"><img src="썸네일주소"></a>
+                        </div>
+                    </li> -->
+                </ul>
+            </section>
+        </div>
+
+        <!-- <aside>
+            <img src="링크">
+            <span class="btnClose">close</span>
+        </aside> -->
+    </main>
+    <footer id="footer_sub">
+        <div class="inner">
+            <div id="footer_menu">
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="media.html">Media</a></li>
+                </ul>
+                <div class="search">
+                    <input type="text" name="search" id="search_box" placeholder="SEARCH">
+                    <i class="fas fa-search"></i>
+                </div>
+
+            </div>
+            <ul id="sns">
+                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            </ul>
+            <ul class="policy">
+                <li><a href="#">개인정보처리방침</a></li>
+                <li><a href="#">영상정보처리기기 설치운영 관리방침</a></li>
+            </ul>
+            <p>&copy; D-RECORD All rights reserved.</p>
+            <a href="#" class="go_top">
+                <div class="arrow"></div>
+            </a>
+        </div>
+    </footer>
+
+
+</body>
+</html>

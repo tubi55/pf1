@@ -1,0 +1,31 @@
+.content {
+    background: #2D2C4D;
+    min-height: 100vh;
+
+    .inner {
+        width: 1180px;
+        margin: 0 auto;
+        padding-top: 200px; padding-bottom: 150px;
+        position: relative;
+
+        h1 {
+            position: relative;
+            text-align: center;
+            font: 700 34px/1 'Montserrat'; color: #a8cfd7;
+            margin-bottom: 60px;
+        }
+    }
+}
+
+@media screen and (max-width:1179px) {
+    .content {
+        .inner {
+            width: 100%;
+            padding: 150px 20px 0px;
+    
+            h1 {
+                font-size: 30px;
+            }
+        }
+    }
+}
